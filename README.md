@@ -198,10 +198,6 @@ python3 telegram-bot.py
 - ✅ 超时控制（5分钟）
 - ✅ 日志记录
 
-## 发布前检查（维护者）
-
-推送或公开发布前，建议使用**另一款 AI**（不同模型/产品）对仓库做一次交叉检查：请其全文搜索可能的敏感信息（如 Telegram Bot Token、User ID、个人绝对路径），根据反馈再排查，确认无遗漏后再推送。
-
 ## License
 
 Apache-2.0. 反馈与贡献欢迎提交至 [GitHub](https://github.com/huanqwer/cursor-telegram-bot)。
