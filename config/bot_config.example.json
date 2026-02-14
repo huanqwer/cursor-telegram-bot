@@ -1,0 +1,14 @@
+{
+  "allowed_user_ids": [],
+  "admin_user_id": null,
+  "rate_limit": {
+    "max_messages": 5,
+    "window_seconds": 60
+  },
+  "allowed_projects": {},
+  "max_task_length": 1000,
+  "command_timeout": 300,
+  "projects_base_path": "",
+  "session_expiry_hours": 24,
+  "project_trigger_mapping": {}
+}

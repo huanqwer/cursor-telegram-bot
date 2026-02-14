@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.telegram.bot</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>REPO_ROOT/bot/venv/bin/python3</string>
+        <string>REPO_ROOT/bot/telegram-bot.py</string>
+    </array>
+    
+    <key>RunAtLoad</key>
+    <true/>
+    
+    <key>KeepAlive</key>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+    </dict>
+    
+    <key>StandardOutPath</key>
+    <string>REPO_ROOT/logs/telegram-bot.out.log</string>
+    
+    <key>StandardErrorPath</key>
+    <string>REPO_ROOT/logs/telegram-bot.err.log</string>
+    
+    <key>WorkingDirectory</key>
+    <string>REPO_ROOT/bot</string>
+    
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>HTTP_PROXY</key>
+        <string>http://127.0.0.1:7890</string>
+        <key>HTTPS_PROXY</key>
+        <string>http://127.0.0.1:7890</string>
+        <key>NO_PROXY</key>
+        <string>localhost,127.0.0.1</string>
+    </dict>
+</dict>
+</plist>
